@@ -6,7 +6,7 @@ from my_secrets import *
 REQUEST_URL = "https://m.uber.com/go/graphql"
 
 
-def get_tarifs(origin, destination):
+def get_rates(origin, destination):
     gmaps = googlemaps.Client(key=API_KEY)
     origin_geocode = gmaps.geocode(origin)
     destination_geocode = gmaps.geocode(destination)
