@@ -27,11 +27,52 @@ def get_rates(origin, destination):
         .get("lng"),
     }
 
+    cookies = {
+        "marketing_vistor_id": "62b3255e-d728-40a1-a097-a91a604b0a9b",
+        "udi-id": "VbbajthoPHJlreWHMhOmWEmWZ+GVoWSplxiJkpKRsaVcc5mWxBXensbQvTIJW4c2cK4EkamtMpx1sw8UcI+UGcMM+OMXarCWYUhRx+hSVW/mXvjgYzdxoB0oZ2FZej3QQCXCQnRVO/XPkPBwTe/yIhJJF815S3DQyggrNAsZJa6ysipwG/ZEBk36E/RXGF2m5XxY5Dav7wiIRCxU9VWZ3w==FWVHYaWO46GY/ayqO2sOqA==NrVkBtaZhnewWmAI8GHPPAO9FQp7EpErONN4FfKczHM=",
+        "sid": "QA.CAESECH67U0H0kG_o_9oRTdUyeYYyvGvyAYiATEqJGZlNjFjNjEwLTNiZGUtNGNiNi1hMTc1LTcwMTAzOTRmOTYwYzJACBskLi7eXAbYAZVZw0tlBJ9mfi4SwocQiAmh1d8KGWaitbKrusJ6IQpPA7VRrCxfFZYubMK3Uuq7ATGZrFhYgDoBMUIIdWJlci5jb20.deK2l7q8r_qxhMCYtXfRMjo-dPkJZVjfvEAtXiXhzWY",
+        "smeta": '{"expiresAt":1762392266804}',
+        "csid": "1.1762392267089.lfTo10gMOldjKRbAf5xIbIqroOzKlyn/GNhkhOdbFGk=",
+        "_cc": "AUXAUte6zQU6kUFw7HyXNGkC",
+        "_cid_cc": "AUXAUte6zQU6kUFw7HyXNGkC",
+        "u-cookie-prefs": "eyJ2ZXJzaW9uIjoxMDAsImRhdGUiOjE3NTk4MDAzODgwOTIsImNvb2tpZUNhdGVnb3JpZXMiOlsiYWxsIl0sImltcGxpY2l0IjpmYWxzZX0%3D",
+        "CONSENTMGR": "1759800388100|consent:true",
+        "UBER_CONSENTMGR": "1759800388100|consent:true",
+        "_fbp": "fb.1.1759800388117.455572488359533415.Bg",
+        "__cf_bm": "Fr86q5f_Dou2MvfrJA5GWTBbHWzdyUUoMfPo4lEEdfQ-1760468448-1.0.1.1-dlfUlSJBH7Tlcjx1bNT4_3AbhpQR7LSvM.ouL31wBY60v7e9eNwPA1IOGx19L5WMYMIcyfBSQhhE04rrLonsO6QK7oWqc8RCzcxlJqFExQs",
+        "utag_main__sn": "3",
+        "utag_main_ses_id": "1760468570854%3Bexp-session",
+        "utag_main__ss": "0%3Bexp-session",
+        "_ua": '{"session_id":"da7cdaa9-207f-46e3-83a1-d1728ea6a1c8","session_time_ms":1760468496531}',
+        "city_id_cookie_key": "805",
+        "jwt-session": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InNsYXRlLWV4cGlyZXMtYXQiOjE3NjA0NzAyOTY1MzMsIlVzZXItQWdlbnQiOiIiLCJ4LXViZXItY2xpZW50LWlkIjoiIiwieC11YmVyLWRldmljZSI6IiIsIngtdWJlci1jbGllbnQtdXNlci1zZXNzaW9uLWlkIjoiIiwidGVuYW5jeSI6InViZXIvcHJvZHVjdGlvbiJ9LCJpYXQiOjE3NjA0MDUwNTcsImV4cCI6MTc2MDQ5MTQ1N30.PZZElnw4xnVZyGHdNuPMsktIxZADJETTnEBjJcO74jM",
+        "utag_main__pn": "2%3Bexp-session",
+        "mp_adec770be288b16d9008c964acfba5c2_mixpanel": "%7B%22distinct_id%22%3A%20%22fe61c610-3bde-4cb6-a175-7010394f960c%22%2C%22%24device_id%22%3A%20%22199bc46d1d7248e-0612b7199299dc8-26061951-1fa400-199bc46d1d828dc%22%2C%22%24initial_referrer%22%3A%20%22https%3A%2F%2Fauth.uber.com%2F%22%2C%22%24initial_referring_domain%22%3A%20%22auth.uber.com%22%2C%22%24user_id%22%3A%20%22fe61c610-3bde-4cb6-a175-7010394f960c%22%7D",
+        "udi-fingerprint": "yd+/8/JgEObCgv36rNcfHI8Bto+wpcU7CRKT+2TjM3QqU4+IpC8kHBOPAVUTEDdQjmF5KHaqv3OgHfR8uKgYMA==+ACIr+ED8VK2Gw0Zm12y7CpgpJSnoG3vgNL4GrI40q4=",
+        "utag_main__se": "8%3Bexp-session",
+        "utag_main__st": "1760470424554%3Bexp-session",
+    }
+
     headers = {
-        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+        "accept": "*/*",
+        "accept-language": "es-ES,es;q=0.9",
+        "cache-control": "no-cache",
+        "content-type": "application/json",
+        "origin": "https://m.uber.com",
+        "pragma": "no-cache",
+        "priority": "u=1, i",
+        "referer": "https://m.uber.com/go/connect/product-selection?drop%5B0%5D=%7B%22addressLine1%22%3A%22Jujuy%22%2C%22addressLine2%22%3A%22Bernal%2C%20Provincia%20de%20Buenos%20Aires%22%2C%22id%22%3A%22EjNKdWp1eSwgQmVybmFsLCBQcm92aW5jaWEgZGUgQnVlbm9zIEFpcmVzLCBBcmdlbnRpbmEiLiosChQKEglzuFLW5S2jlRHzW8G0UtmrZBIUChIJXd0Lx_0xo5URrKtd8fMscGw%22%2C%22source%22%3A%22SEARCH%22%2C%22latitude%22%3A-34.7191098%2C%22longitude%22%3A-58.2778439%2C%22provider%22%3A%22google_places%22%7D&pickup=%7B%22addressLine1%22%3A%22Fray%20Mamerto%20Esqui%C3%BA%201600%22%2C%22addressLine2%22%3A%22B1826GBT%20Buenos%20Aires%2C%20Provincia%20de%20Buenos%20Aires%22%2C%22id%22%3A%22ChIJKWcLMTTNvJURjL81vF0ElkI%22%2C%22source%22%3A%22SEARCH%22%2C%22latitude%22%3A-34.712635%2C%22longitude%22%3A-58.37647010000001%2C%22provider%22%3A%22google_places%22%7D&uclick_id=d9eeeea3-78de-48db-b591-50a89e2051af",
+        "sec-ch-ua": '"Google Chrome";v="141", "Not?A_Brand";v="8", "Chromium";v="141"',
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": '"Windows"',
+        "sec-fetch-dest": "empty",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-site": "same-origin",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
         "x-csrf-token": "x",
-        "cookie": 'marketing_vistor_id=463dccad-91c4-41e8-b2cd-ab98736ce6d8; udi-id=QHO0m23to6cQ6bykWFkVxcn3maAOqUD1Rq64zF/stUnJPO6RKvG6x9Rh2VGxeGOnMxuvXr1QJ2e6X/JOo0xbSQ6Je+o18/tUb7ytRqpJL4ybBbY2MPkIuVpvKUnViMYUeP8R9nYMbroeIn4PxAIzmxKsINfY6XpDakfgL+W1kOvpeb/cGndtJ5QzPKousjUbINOfk5u7GdUx6hXOmAN5Dg==9HmTCbP+TQeZc8jAwIExgw==odhETNUDFzrMVtxp4xNnqt/gcPCsaeHISOkvbgFp1qU=; sid=QA.CAESEOYIliTczkqzlQB9sO4jVp8Y0OSoxwYiATEqJGZlNjFjNjEwLTNiZGUtNGNiNi1hMTc1LTcwMTAzOTRmOTYwYzJAnKx5otbOMIu_sF4XigVEpp_BImBROnKJpv1zuomoyuhGd00_K2NvFw8k4lWHRfsKMW6RVR6WlrNW8mbu9j3M1DoBMUIIdWJlci5jb20.7w34RiKOE8Z3kmRxwBrIxsgbp1LueA30sb0yph4q9BA; smeta={"expiresAt":1760178768270}; csid=1.1760178768568.gEP0kavU4HBZxBUr0jzz9Ox/joaNEd4uUN3d/LXTyyE=; u-cookie-prefs=eyJ2ZXJzaW9uIjoxMDAsImRhdGUiOjE3NTgyMTEyODA1NTYsImNvb2tpZUNhdGVnb3JpZXMiOlsiZXNzZW50aWFsIl0sImltcGxpY2l0IjpmYWxzZX0%3D; UBER_CONSENTMGR=1758211280556|consent:false; _ua={"session_id":"1c5b613c-d21c-4087-a30a-52f81dbcb724","session_time_ms":1758211293686}; jwt-session=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InNsYXRlLWV4cGlyZXMtYXQiOjE3NTgyMTMwOTM2ODYsIlVzZXItQWdlbnQiOiIiLCJ4LXViZXItY2xpZW50LWlkIjoiIiwieC11YmVyLWRldmljZSI6IiIsIngtdWJlci1jbGllbnQtdXNlci1zZXNzaW9uLWlkIjoiIiwidGVuYW5jeSI6InViZXIvcHJvZHVjdGlvbiJ9LCJpYXQiOjE3NTgyMTEyOTQsImV4cCI6MTc1ODI5NzY5NH0.F6ATPPkuyI8sJvhbyd86CGfEm2Fm4ozi5eaLeA5TEDg; _cc=ARdEFZCZsPKsmh1ttlXgfJof; _cid_cc=ARdEFZCZsPKsmh1ttlXgfJof; __cf_bm=Oqg5Rz56Msa0zlo3iNDA_6m2X5rlScdmIIYHLAxbWvw-1758213058-1.0.1.1-42iZ7IYABtbIRX5.lt82OGhbrkQQzU_pMRI_dfzsMXQyBASIxTJ7Jkb..ib3hrk3mN4aGIj_jzBcdcRaMMePQIIXNSkO8mWF0.S.r.c9224; mp_adec770be288b16d9008c964acfba5c2_mixpanel=%7B%22distinct_id%22%3A%20%22fe61c610-3bde-4cb6-a175-7010394f960c%22%2C%22%24device_id%22%3A%20%221995d8f5c61be3-0387759cf15071-26061951-1aeaa0-1995d8f5c621f2b%22%2C%22%24initial_referrer%22%3A%20%22https%3A%2F%2Fwww.uber.com%2F%22%2C%22%24initial_referring_domain%22%3A%20%22www.uber.com%22%2C%22%24user_id%22%3A%20%22fe61c610-3bde-4cb6-a175-7010394f960c%22%7D; udi-fingerprint=D37yt8QjfJUN6L6Ajn8Ul8DdLLrP8QxxOKDIW0ZKRC1APcWrYfWwlkRu+XkMyyZ5Fl5keOdi6eIDQjxLPsuyVw==xqiaxQbf3eAFZeQ2datOvHt426Kdz+K/oxSbZ81BpEQ=; city_id_cookie_key=805,2223',
+        "x-uber-rv-initial-load-city-id": "805",
         "x-uber-rv-session-type": "desktop_session",
+        # 'cookie': 'marketing_vistor_id=62b3255e-d728-40a1-a097-a91a604b0a9b; udi-id=VbbajthoPHJlreWHMhOmWEmWZ+GVoWSplxiJkpKRsaVcc5mWxBXensbQvTIJW4c2cK4EkamtMpx1sw8UcI+UGcMM+OMXarCWYUhRx+hSVW/mXvjgYzdxoB0oZ2FZej3QQCXCQnRVO/XPkPBwTe/yIhJJF815S3DQyggrNAsZJa6ysipwG/ZEBk36E/RXGF2m5XxY5Dav7wiIRCxU9VWZ3w==FWVHYaWO46GY/ayqO2sOqA==NrVkBtaZhnewWmAI8GHPPAO9FQp7EpErONN4FfKczHM=; sid=QA.CAESECH67U0H0kG_o_9oRTdUyeYYyvGvyAYiATEqJGZlNjFjNjEwLTNiZGUtNGNiNi1hMTc1LTcwMTAzOTRmOTYwYzJACBskLi7eXAbYAZVZw0tlBJ9mfi4SwocQiAmh1d8KGWaitbKrusJ6IQpPA7VRrCxfFZYubMK3Uuq7ATGZrFhYgDoBMUIIdWJlci5jb20.deK2l7q8r_qxhMCYtXfRMjo-dPkJZVjfvEAtXiXhzWY; smeta={"expiresAt":1762392266804}; csid=1.1762392267089.lfTo10gMOldjKRbAf5xIbIqroOzKlyn/GNhkhOdbFGk=; _cc=AUXAUte6zQU6kUFw7HyXNGkC; _cid_cc=AUXAUte6zQU6kUFw7HyXNGkC; u-cookie-prefs=eyJ2ZXJzaW9uIjoxMDAsImRhdGUiOjE3NTk4MDAzODgwOTIsImNvb2tpZUNhdGVnb3JpZXMiOlsiYWxsIl0sImltcGxpY2l0IjpmYWxzZX0%3D; CONSENTMGR=1759800388100|consent:true; UBER_CONSENTMGR=1759800388100|consent:true; _fbp=fb.1.1759800388117.455572488359533415.Bg; __cf_bm=Fr86q5f_Dou2MvfrJA5GWTBbHWzdyUUoMfPo4lEEdfQ-1760468448-1.0.1.1-dlfUlSJBH7Tlcjx1bNT4_3AbhpQR7LSvM.ouL31wBY60v7e9eNwPA1IOGx19L5WMYMIcyfBSQhhE04rrLonsO6QK7oWqc8RCzcxlJqFExQs; utag_main__sn=3; utag_main_ses_id=1760468570854%3Bexp-session; utag_main__ss=0%3Bexp-session; _ua={"session_id":"da7cdaa9-207f-46e3-83a1-d1728ea6a1c8","session_time_ms":1760468496531}; city_id_cookie_key=805; jwt-session=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InNsYXRlLWV4cGlyZXMtYXQiOjE3NjA0NzAyOTY1MzMsIlVzZXItQWdlbnQiOiIiLCJ4LXViZXItY2xpZW50LWlkIjoiIiwieC11YmVyLWRldmljZSI6IiIsIngtdWJlci1jbGllbnQtdXNlci1zZXNzaW9uLWlkIjoiIiwidGVuYW5jeSI6InViZXIvcHJvZHVjdGlvbiJ9LCJpYXQiOjE3NjA0MDUwNTcsImV4cCI6MTc2MDQ5MTQ1N30.PZZElnw4xnVZyGHdNuPMsktIxZADJETTnEBjJcO74jM; utag_main__pn=2%3Bexp-session; mp_adec770be288b16d9008c964acfba5c2_mixpanel=%7B%22distinct_id%22%3A%20%22fe61c610-3bde-4cb6-a175-7010394f960c%22%2C%22%24device_id%22%3A%20%22199bc46d1d7248e-0612b7199299dc8-26061951-1fa400-199bc46d1d828dc%22%2C%22%24initial_referrer%22%3A%20%22https%3A%2F%2Fauth.uber.com%2F%22%2C%22%24initial_referring_domain%22%3A%20%22auth.uber.com%22%2C%22%24user_id%22%3A%20%22fe61c610-3bde-4cb6-a175-7010394f960c%22%7D; udi-fingerprint=yd+/8/JgEObCgv36rNcfHI8Bto+wpcU7CRKT+2TjM3QqU4+IpC8kHBOPAVUTEDdQjmF5KHaqv3OgHfR8uKgYMA==+ACIr+ED8VK2Gw0Zm12y7CpgpJSnoG3vgNL4GrI40q4=; utag_main__se=8%3Bexp-session; utag_main__st=1760470424554%3Bexp-session',
     }
 
     payload = {
@@ -55,7 +96,7 @@ def get_rates(origin, destination):
         "query": "query Products($capacity: Int, $destinations: [InputCoordinate!]!, $includeRecommended: Boolean = false, $isRiderCurrentUser: Boolean, $payment: InputPayment, $paymentProfileUUID: String, $pickup: InputCoordinate!, $pickupFormattedTime: String, $profileType: String, $profileUUID: String, $returnByFormattedTime: String, $stuntID: String, $targetProductType: EnumRVWebCommonTargetProductType) {\n  products(\n    capacity: $capacity\n    destinations: $destinations\n    includeRecommended: $includeRecommended\n    isRiderCurrentUser: $isRiderCurrentUser\n    payment: $payment\n    paymentProfileUUID: $paymentProfileUUID\n    pickup: $pickup\n    pickupFormattedTime: $pickupFormattedTime\n    profileType: $profileType\n    profileUUID: $profileUUID\n    returnByFormattedTime: $returnByFormattedTime\n    stuntID: $stuntID\n    targetProductType: $targetProductType\n  ) {\n    ...ProductsFragment\n    __typename\n  }\n}\n\nfragment ProductsFragment on RVWebCommonProductsResponse {\n  defaultVVID\n  hourlyTiersWithMinimumFare {\n    ...HourlyTierFragment\n    __typename\n  }\n  intercity {\n    ...IntercityFragment\n    __typename\n  }\n  links {\n    iFrame\n    text\n    url\n    __typename\n  }\n  productsUnavailableMessage\n  tiers {\n    ...TierFragment\n    __typename\n  }\n  __typename\n}\n\nfragment BadgesFragment on RVWebCommonProductBadge {\n  backgroundColor\n  color\n  contentColor\n  icon\n  inactiveBackgroundColor\n  inactiveContentColor\n  text\n  __typename\n}\n\nfragment HourlyTierFragment on RVWebCommonHourlyTier {\n  description\n  distance\n  fare\n  fareAmountE5\n  farePerHour\n  minutes\n  packageVariantUUID\n  preAdjustmentValue\n  __typename\n}\n\nfragment IntercityFragment on RVWebCommonIntercityInfo {\n  oneWayIntercityConfig(destinations: $destinations, pickup: $pickup) {\n    ...IntercityConfigFragment\n    __typename\n  }\n  roundTripIntercityConfig(destinations: $destinations, pickup: $pickup) {\n    ...IntercityConfigFragment\n    __typename\n  }\n  __typename\n}\n\nfragment IntercityConfigFragment on RVWebCommonIntercityConfig {\n  description\n  onDemandAllowed\n  reservePickup {\n    ...IntercityTimePickerFragment\n    __typename\n  }\n  returnBy {\n    ...IntercityTimePickerFragment\n    __typename\n  }\n  __typename\n}\n\nfragment IntercityTimePickerFragment on RVWebCommonIntercityTimePicker {\n  bookingRange {\n    maximum\n    minimum\n    __typename\n  }\n  header {\n    subTitle\n    title\n    __typename\n  }\n  __typename\n}\n\nfragment TierFragment on RVWebCommonProductTier {\n  products {\n    ...ProductFragment\n    __typename\n  }\n  title\n  __typename\n}\n\nfragment ProductFragment on RVWebCommonProduct {\n  badges {\n    ...BadgesFragment\n    __typename\n  }\n  cityID\n  currencyCode\n  description\n  detailedDescription\n  discountPrimary\n  displayName\n  estimatedTripTime\n  etaStringShort\n  fares {\n    capacity\n    discountPrimary\n    fare\n    fareAmountE5\n    hasPromo\n    hasRidePass\n    meta\n    preAdjustmentValue\n    __typename\n  }\n  hasPromo\n  hasRidePass\n  hasBenefitsOnFare\n  hourly {\n    tiers {\n      ...HourlyTierFragment\n      __typename\n    }\n    overageRates {\n      ...HourlyOverageRatesFragment\n      __typename\n    }\n    __typename\n  }\n  iconType\n  id\n  is3p\n  isAvailable\n  legalConsent {\n    ...ProductLegalConsentFragment\n    __typename\n  }\n  parentProductUuid\n  preAdjustmentValue\n  productImageUrl\n  productUuid\n  reserveEnabled\n  __typename\n}\n\nfragment ProductLegalConsentFragment on RVWebCommonProductLegalConsent {\n  header\n  image {\n    url\n    width\n    __typename\n  }\n  description\n  enabled\n  ctaUrl\n  ctaDisplayString\n  buttonLabel\n  showOnce\n  shouldBlockRequest\n  __typename\n}\n\nfragment HourlyOverageRatesFragment on RVWebCommonHourlyOverageRates {\n  perDistanceUnit\n  perTemporalUnit\n  __typename\n}\n",
     }
 
-    resp = requests.post(REQUEST_URL, json=payload, headers=headers)
+    resp = requests.post(REQUEST_URL, json=payload, headers=headers, cookies=cookies)
     parsed_resp = resp.json()
 
     try:
@@ -65,6 +106,9 @@ def get_rates(origin, destination):
         flash_price = shipment_details[0].get("fares")[0].get("fare")
         moto_price = shipment_details[1].get("fares")[0].get("fare")
 
-        return flash_price, moto_price
+        return f"precio auto: {flash_price}, precio moto: {moto_price}"
     except AttributeError:
         return None
+
+
+print(get_rates("fray mamerto esquiu 1600, lanus este", "jujuy 920, bernal"))
