@@ -88,8 +88,8 @@ def get_rates(origin, destination):
             "payment": {"paymentProfileUUID": "4bd25017-b68c-5625-9d3a-3c810e6cb60c"},
             "paymentProfileUUID": "4bd25017-b68c-5625-9d3a-3c810e6cb60c",
             "pickup": {
-                "latitude": coordinates["destination_lat"],
-                "longitude": coordinates["destination_lng"],
+                "latitude": coordinates["origin_lat"],
+                "longitude": coordinates["origin_lng"],
             },
             "targetProductType": "CONNECT",
         },
@@ -106,9 +106,6 @@ def get_rates(origin, destination):
         flash_price = shipment_details[0].get("fares")[0].get("fare")
         moto_price = shipment_details[1].get("fares")[0].get("fare")
 
-        return f"precio auto: {flash_price}, precio moto: {moto_price}"
+        return {"precioAuto": flash_price, "precioMoto": moto_price}
     except AttributeError:
         return None
-
-
-print(get_rates("fray mamerto esquiu 1600, lanus este", "jujuy 920, bernal"))
